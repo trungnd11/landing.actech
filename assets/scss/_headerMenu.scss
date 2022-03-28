@@ -72,6 +72,20 @@
         }
       }
     }
+
+    .header-login-btn {
+      .btn-arrow {
+        color: $theme-color;
+        position: relative;
+        right: 5px;
+        animation: arrow 1s infinite alternate;
+      }
+    }
+  }
+}
+@keyframes arrow {
+  100% {
+    right: 0;
   }
 }
 // Header Bottom

@@ -13,7 +13,6 @@
         line-height: 1.2;
         font-family: $font_2;
         margin: 0;
-
         @media #{$md} {
           font-size: 30px;
         }
@@ -26,8 +25,8 @@
         font-size: 18px;
       }
     }
-    .contact-number {
-      color: #ff5f13;
+    .contact-company {
+      color: $theme-color;
       font-size: 36px;
       font-weight: 700;
       @media #{$sm} {
@@ -42,6 +41,36 @@
       @media #{$md} {
         float: left;
         margin-top: 30px;
+      }
+      @media #{$lg} {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+    }
+    .address {
+      color: #fff;
+      line-height: 2;
+    }
+    .footer-map {
+      padding: 0 15px;
+        .footer-map-iframe {
+        width: 36em;
+        height: 20em;
+        border: 0;
+        @media #{$xs} {
+          padding-top: 15px;
+          width: 22.5em;
+          height: 15em;
+        }
+        @media #{$md} {
+          padding-top: 15px;
+          width: 43em;
+          height: 20em;
+        }
+        @media #{$lg} {
+          width: 28em;
+          height: 20em;
+        }
       }
     }
   }
@@ -87,7 +116,7 @@
             margin-bottom: 15px;
             text-transform: capitalize;
             & a {
-              color: #868c98;
+              color: #ffffffa6;
               font-weight: 300;
               &:hover {
                 color: $theme-color;
@@ -95,6 +124,40 @@
               }
             }
           }
+        }
+      }
+      .search-box {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        display: flex;
+        .search-input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #c9252b;
+          border-radius: 10px 0 0 10px;
+          border-right: none;
+          outline: none;
+          font-size: 20px;
+          color: #c9252b;
+          background: none;
+          &::placeholder {
+            text-align: center;
+            color: #fff;
+          }
+        }
+        .search-button {
+          text-align: center;
+          height: 40px;
+          width: 70px;
+          outline: none;
+          cursor: pointer;
+          border: 1px solid #c9252b;
+          border-radius: 0 10px 10px 0;
+          border-left: none;
+          background: none;
+          font-size: 20px;
+          border-left: 1px solid #c9252b;
         }
       }
     }
@@ -127,6 +190,7 @@
 
   // Footer SociaL
   .footer-social {
+    text-align: center;
     a {
       color: #848493;
       font-size: 18px;

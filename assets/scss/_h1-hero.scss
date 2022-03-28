@@ -1,4 +1,28 @@
 .slider-height {
+  .banner-content-icon-hand {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5em;
+    left: 12%;
+    bottom: -12%;
+    transform: translateX(-50%);
+    animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
+  }
+  @keyframes iconHand {
+    100% {
+      left: 18%;
+      font-size: 2.8em;
+    }
+  }
+
+  @keyframes iconHandColor {
+    50% {
+     color: $white;
+    }
+    100% {
+      color: $theme-color;
+    }
+  }
   @media #{$lg} {
     .banner-video {
       height: 450px;
@@ -14,6 +38,9 @@
     .banner-content-caption h1 {
       font-size: 32px;
     }
+    .banner-content-btn {
+      display: none;
+    }
   }
   @media #{$sm} {
     .banner-video {
@@ -22,6 +49,9 @@
     .banner-content-caption h1 {
       font-size: 31px;
     }
+    .banner-content-btn {
+      display: none;
+    }
   }
   @media #{$xs} {
     .banner-video {
@@ -29,6 +59,9 @@
     }
     .banner-content-caption h1 {
       font-size: 30px;
+    }
+    .banner-content-btn {
+      display: none;
     }
   }
 }
